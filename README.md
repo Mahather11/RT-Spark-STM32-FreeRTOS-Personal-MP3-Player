@@ -1,5 +1,7 @@
 # RT-Spark STM32 FreeRTOS Personal MP3 Player
 
+<img width="2048" height="2048" alt="image" src="https://github.com/user-attachments/assets/efdfdd4a-e29f-45d6-97eb-8732cefa14e0" />
+
 ## Overview
 
 This project is a Personal MP3 Player developed for **BCA182 Laboratory Activity 2** on the **RT-Spark** board, which uses an **STM32F407ZGT6** ARM Cortex-M4 microcontroller.
