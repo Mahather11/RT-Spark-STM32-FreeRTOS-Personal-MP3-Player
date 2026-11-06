@@ -138,3 +138,5 @@ The project owner reports that audio playback, LCD output, RGB matrix feedback, 
 
 - **Course materials:** song data and sequencing concepts are based on the Module 8 laboratory materials (`song.h` and `song_def.h`).
 - **RTOS:** FreeRTOS.
+
+ 
