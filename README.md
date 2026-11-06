@@ -8,7 +8,7 @@ Instead of decoding compressed audio files, the firmware synthesizes notes in re
 
 ## Features
 
-- **Eight selectable melodies** from the course song catalog.
+- **Eight selectable melodies** from the course song catalog. The catalog contains two additional course song definitions that are not part of the current eight-song selector.
 - **Real-time audio synthesis** with a phase-accumulator wavetable synthesizer at 44.1 kHz.
 - **FreeRTOS task-based application** for button polling, audio control, LCD updates, and RGB matrix updates.
 - **ST7789 LCD interface** showing the current track, selection list, and playback state.
@@ -62,30 +62,30 @@ flowchart TD
 
 ```text
 .
-├── include/
-│   ├── audio_start_gate.h
-│   ├── audio_synth.h
-│   ├── FreeRTOSConfig.h
-│   ├── led_matrix.h
-│   ├── led_matrix_effect.h
-│   ├── song_catalog.h
-│   ├── song_def.h
-│   ├── song_pcm.h
-│   ├── song_player.h
-│   ├── song_selection_state.h
-│   └── st7789_lcd.h
-├── src/
-│   ├── audio_synth.cpp
-│   ├── led_matrix.cpp
-│   ├── main.cpp
-│   ├── song_catalog.cpp
-│   ├── song_pcm.cpp
-│   ├── song_player.cpp
-│   ├── song_selection_state.cpp
-│   └── st7789_lcd.cpp
-├── test/
-│   └── test_main.cpp
-└── platformio.ini
+|-- include/
+|   |-- audio_start_gate.h
+|   |-- audio_synth.h
+|   |-- FreeRTOSConfig.h
+|   |-- led_matrix.h
+|   |-- led_matrix_effect.h
+|   |-- song_catalog.h
+|   |-- song_def.h
+|   |-- song_pcm.h
+|   |-- song_player.h
+|   |-- song_selection_state.h
+|   `-- st7789_lcd.h
+|-- src/
+|   |-- audio_synth.cpp
+|   |-- led_matrix.cpp
+|   |-- main.cpp
+|   |-- song_catalog.cpp
+|   |-- song_pcm.cpp
+|   |-- song_player.cpp
+|   |-- song_selection_state.cpp
+|   `-- st7789_lcd.cpp
+|-- test/
+|   `-- test_main.cpp
+`-- platformio.ini
 ```
 
 ## Build and upload
@@ -134,6 +134,5 @@ The project owner reports that audio playback, LCD output, RGB matrix feedback, 
 
 ## Credits
 
-- **Course materials:** song data and sequencing concepts based on the Module 8 laboratory handout (`song.h` and `song_def.h`).
-- **Hardware drivers:** LCD and ES8388 configuration based on the RT-Thread RT-Spark BSP (Apache-2.0).
-- **RTOS:** FreeRTOS (MIT License).
+- **Course materials:** song data and sequencing concepts are based on the Module 8 laboratory materials (`song.h` and `song_def.h`).
+- **RTOS:** FreeRTOS.
