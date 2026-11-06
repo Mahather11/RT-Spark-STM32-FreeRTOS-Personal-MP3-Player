@@ -204,7 +204,7 @@ static_assert(song_catalog::kSelectableSongCount == song_selection::kSongCount,
 constexpr uint8_t kAudioTestMuteBit = 0x04U;
 constexpr uint8_t kAudioTestDacClockRatio = 0x02U; // 256 x LRCK
 constexpr uint8_t kAudioTestDacVolume = 0x00U; // 0 dB digital gain
-constexpr uint8_t kAudioTestHeadphoneVolume = 0x0EU; // -24 dB
+constexpr uint8_t kAudioTestHeadphoneVolume = 0x21U; // -24 dB
 constexpr uint8_t kAudioTestIdleDacVolume = 0xC0U; // -96 dB
 constexpr uint8_t kAudioTestIdleHeadphoneVolume = 0x00U; // -45 dB
 static_assert(kAudioTestDmaHalfwords == 8820U,
